@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercure: Página Inicial</title>
+
+</head>
+<body>
+    <h1>Bem-vindo, {{ userinfo['name'] }}</h1>
+    <p>Email: {{ userinfo['email'] }}</p>
+    <p>Foto:</p>
+    <img src="{{ userinfo['picture'] }}" alt="Foto do perfil">
+    <br><br>
+    <a href="{{ url_for('main.logout') }}">Logout</a>
+</body>
+</html>
